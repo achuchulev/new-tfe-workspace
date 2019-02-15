@@ -5,7 +5,7 @@ variable "CO_team" {}
  
 module "aws-workspace-test" {
   source            = "app.terraform.io/atanasc/addworkspace/tfe"
-  version           = "0.0.1"
+  version           = "0.0.10"
   workspace_type    = "repo"
   workspace_name    = "workspace-test"
   repo_working_dir  = ""
