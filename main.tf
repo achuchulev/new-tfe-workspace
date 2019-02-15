@@ -17,9 +17,9 @@ module "aws-workspace-test" {
   #aws_account       = "navCore"
   vcs_repo_ident    = "achuchulev/tfe-aws-workspace"
 }
-module "var-workspace-test" {
-  source = "./aws/workspace-test"
-  region = "us-east-2"
-  account = "618541241448"
-  workspace_id = "${module.aws-workspace-test.tfe_repo_workspace_id}"
-}
+#module "var-workspace-test" {
+#  source = "./aws/workspace-test"
+#  region = "us-east-2"
+#  account = "618541241448"
+#  workspace_id = "${module.aws-workspace-test.tfe_repo_workspace_id}"
+#}
