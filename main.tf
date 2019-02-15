@@ -1,7 +1,7 @@
 variable "token" {}
 variable "oauth" {}
 variable "organization" {}
-#variable "CO_team" {}
+variable "CO_team" {}
  
 module "aws-workspace-test" {
   source            = "app.terraform.io/atanasc/addworkspace/tfe"
@@ -9,7 +9,7 @@ module "aws-workspace-test" {
   workspace_type    = "repo"
   workspace_name    = "workspace-test"
   repo_working_dir  = ""
-  #tfe_team          = "${var.CO_team}"
+  tfe_team          = "${var.CO_team}"
   #tfe_team_access   = "admin"
   token             = "${var.token}"
   oauth             = "${var.oauth}"
